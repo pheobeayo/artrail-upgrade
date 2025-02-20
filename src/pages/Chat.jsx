@@ -1,44 +1,46 @@
-
-
-
 const Chat = () => {
-
-
-
-
     return (
-        <main className='bg-[#231D16] w-screen'>
-            <div className='w-[90%] mx-auto p-8'>
-
-                <section className='flex lg:flex-row md:flex-row flex-col justify-between'>
-                    <div className='bg-[#231D16]/90 lg:w-[40%] md:w-[40%] w-[100%]  border rounded-lg p-4'>
-                        <h3 className='font-bold mt-4 text-white lg:mt-0 md:mt-0 lg:text-[24px] md:text-[24px] text-[18px] capitalise font-serif'>Zariah Store</h3>
-                        <p className='flex justify-between text-white my-4 font-semibold font-serif'>All New Rush <span>Sun</span></p>
-                        <p className=' mt-4 my-4 text-white lg:mt-0 md:mt-0 lg:text-[14px] md:text-[14px] text-[10px] font-light font-serif'>Hello, i chatted you up because i want to purchase
-                        </p>
-                        <p className='flex justify-between text-white my-4 font-semibold font-serif'>All New Rush <span>Sun</span></p>
-                        <p className=' mt-4 my-4 text-white lg:mt-0 md:mt-0 lg:text-[14px] md:text-[14px] text-[10px] font-light font-serif'>Hello, i chatted you up because i want to purchase
-                        </p>
-                        <p className='flex justify-between text-white my-4 font-semibold font-serif'>All New Rush <span>Sun</span></p>
-                        <p className=' mt-4 my-4 text-white lg:mt-0 md:mt-0 lg:text-[14px] md:text-[14px] text-[10px]  font-light font-serif'>Hello, i chatted you up because i want to purchase
-                        </p>
-
-                    </div>
-                    <div className='lg:w-[55%] md:w-[55%] w-[100%] bg-[#231D16]/90'>
-                        <div className="border bg-[#231D16]/90 rounded-lg p-4 my-4">
-
-                            <p className='text-white lg:text-[18px] md:text-[18px] text-[14px] font-bold font-serif'>All New Rush</p>
-                            <p className='mt-4 text-white text-justify lg:mt-0 md:mt-0 lg:text-[18px] md:text-[18px] text-[16px]  font-serif'>
-                                Hey, i messaged you because of the report you posted recently</p>
-
-                        </div>
-                    </div>
-                </section>
+      <main className="bg-[#231D16] w-screen min-h-screen flex flex-col items-center py-8">
+        <div className="w-full max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto p-4 md:p-6 lg:p-8">
+          
+          <section className="flex flex-col lg:flex-row gap-6">
+           
+            <div className="bg-[#2D2821] lg:w-[40%] w-full border rounded-lg p-4">
+              <h3 className="text-white font-bold text-lg md:text-xl lg:text-2xl capitalize font-serif">
+                Zariah Store
+              </h3>
+              {[
+                { sender: "All New Rush", time: "Sun", message: "Hello, I chatted you up because I want to purchase." },
+                { sender: "All New Rush", time: "Sun", message: "Hello, I chatted you up because I want to purchase." },
+                { sender: "All New Rush", time: "Sun", message: "Hello, I chatted you up because I want to purchase." },
+              ].map((chat, index) => (
+                <div key={index} className="mt-4 border-b border-white/30 pb-2">
+                  <p className="flex justify-between text-white font-semibold font-serif">
+                    {chat.sender} <span>{chat.time}</span>
+                  </p>
+                  <p className="text-white text-sm md:text-base lg:text-lg font-light font-serif mt-2">
+                    {chat.message}
+                  </p>
+                </div>
+              ))}
             </div>
-
-
-        </main>
-    )
-}
-
-export default Chat
+  
+          
+            <div className="lg:w-[60%] md:w-[60%] w-full bg-[#231D16]/90 border rounded-lg p-4">
+              <div className="p-4 rounded-lg bg-[#2D2821]">
+                <p className="text-white font-bold text-lg md:text-xl lg:text-2xl font-serif border-b border-white/30 pb-2">
+                  All New Rush
+                </p>
+                <p className="text-white text-sm md:text-base lg:text-lg font-serif mt-4">
+                  Hey, I messaged you because of the report you posted recently.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    );
+  };
+  
+  export default Chat;
+  

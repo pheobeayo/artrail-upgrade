@@ -46,7 +46,7 @@ const Transactions = () => {
                     </h3>
                     <div className='border border-white rounded-3xl'>
 
-                        <table className="table-fixed border-none  border-spacing-2 w-[100%]">
+                        <table className="table-auto border-none  border-spacing-2 w-[100%]">
                             <thead className="p-4">
                                 <tr className="text-white font-serif font-normal text-center">
                                     <th className="border-b  p-2 ">Product </th>
