@@ -1,10 +1,61 @@
 import { useState } from "react";
 import otherBackground from "../assets/otherBackground.svg";
+// import { toast } from "react-toastify";
+// import { getProvider } from "../constants/providers";
+// import { getArtrailContract } from "../constants/contract";
+// import {
+//   useWeb3ModalAccount,
+//   useWeb3ModalProvider,
+// } from "@web3modal/ethers/react";
+// import { isSupportedChain } from "../connection";
+// import { ethers, parseEther } from "ethers";
+// import { ErrorDecoder } from "ethers-decode-error";
+// import abi from "../constants/abi.json";
 
 const CreateAccount = () => {
   const [creatorName, setCreatorName] = useState("");
   const [bio, setBio] = useState("");
   const [socials, setSocials] = useState("");
+  // const { chainId } = useWeb3ModalAccount();
+  // const { walletProvider } = useWeb3ModalProvider();
+  // const errorDecoder = ErrorDecoder.create([abi]);
+
+  // async function handleCreateAccount() {
+  //   if (!isSupportedChain(chainId)) return console.error("Wrong network");
+  //   const readWriteProvider = getProvider(walletProvider);
+  //   const signer = await readWriteProvider.getSigner();
+
+  //   const contract = getArtrailContract(signer);
+
+  //   try {
+  //     const transaction = await contract.createAccount(
+  //       creatorName,
+  //       bio,
+  //       socials
+  //     );
+  //     const receipt = await transaction.wait();
+
+  //     if (receipt.status) {
+  //       return toast.success("Account creation successful!", {
+  //         position: "top-center",
+  //       });
+  //     }
+
+  //     toast.error("Account creation failed!", {
+  //       position: "top-center",
+  //     });
+  //   } catch (err) {
+  //     const decodedError = await errorDecoder.decode(err);
+  //     toast.error(`Account creation failed! - ${decodedError.reason}`, {
+  //       position: "top-center",
+  //     });
+  //   } finally {
+  //     setCreatorName('')
+  //     setBio('')
+  //     setSocials('')
+  //   }
+  // }
+
 
   return (
     <main className="bg-[#231D16] w-screen">

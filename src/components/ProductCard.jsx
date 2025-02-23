@@ -1,8 +1,37 @@
-
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+// import { formatUnits } from "ethers";
+// import CallApi from "../api/CallApi";
+// import { HashLoader  } from "react-spinners";
+// import { toast } from "react-toastify";
 
 
 const ProductCard = () => {
+  // const [data, setData] = useState(null);
+  // const [error, setError] = useState(null);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const result = await CallApi(
+  //         "allProducts",
+  //         import.meta.env.VITE_CONTRACT_ADDRESS,
+  //         12237
+  //       );
+  //       setData(result.flat());
+  //     } catch (err) {
+  //       setError(err);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
+
+  // if (error)
+  //   return toast.error(`Error: ${error.message}`, {
+  //     position: "top-center",
+  //   });
+  // if (!data) return <HashLoader color="#54BE73" size={30}/>;
 
 
   return (

@@ -1,10 +1,80 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
+// import { toast } from "react-toastify";
+// import { formatUnits, parseUnits } from "ethers";
+// import { getProvider } from "../constants/providers";
+// import { getArtrailContract } from "../constants/contract";
+// import {
+//   useWeb3ModalAccount,
+//   useWeb3ModalProvider,
+// } from "@web3modal/ethers/react";
+// import { isSupportedChain } from "../connection";
+// import { ErrorDecoder } from "ethers-decode-error";
+// import abi from "../constants/abi.json";
 
 const ProductDetails = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { id } = useParams();
+  // const [data, setData] = useState(null);
+  // const [error, setError] = useState(null);
+  // const [amount, setAmount] = useState("");
+  // const [quantity, setQuantity] = useState("");
+
+  // const { chainId } = useWeb3ModalAccount();
+  // const { walletProvider } = useWeb3ModalProvider();
+  // const errorDecoder = ErrorDecoder.create([abi]);
+
+  // async function handleBuy() {
+  //   if (!isSupportedChain(chainId)) return console.error("Wrong network");
+  //   const readWriteProvider = getProvider(walletProvider);
+  //   const signer = await readWriteProvider.getSigner();
+
+  //   const contract = getArtrailContract(signer);
+
+  //   try {
+  //     const _amount = parseUnits(amount.toString(), 'ether');
+  //     const transaction = await contract.buyProduct(_amount, id, quantity);
+  //     const receipt = await transaction.wait();
+
+  //     if (receipt.status) {
+  //       return toast.success("Buy successful!", {
+  //         position: "top-center",
+  //       });
+  //     }
+
+  //     toast.error("Buy failed!", {
+  //       position: "top-center",
+  //     });
+  //   } catch (err) {
+  //     const decodedError = await errorDecoder.decode(err);
+  //     toast.error(`Buy failed! - ${decodedError.reason}`, {
+  //       position: "top-center",
+  //     });
+  //   } finally {
+  //     setAmount("");
+  //     setQuantity("");
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+       
+  //       const result = await CallApi(
+  //         "getProductDetails",
+  //         import.meta.env.VITE_CONTRACT_ADDRESS,
+  //         12237,
+  //         [Number(id)]
+  //       );
+  //       setData(result.flat());
+  //     } catch (err) {
+  //       setError(err);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
 
   const product = {
     name: "Handcrafted Wooden Sculpture",

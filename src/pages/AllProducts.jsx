@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 import otherBackground from "../assets/otherBackground.svg";
 import Ellipse from "../assets/Ellipse.svg";
+// import React, { useState, useEffect } from "react";
+// import { formatUnits } from "ethers";
+// import { HashLoader  } from "react-spinners";
+// import { toast } from "react-toastify";
+// import CallApi from "../api/CallApi";
+// import { useWeb3ModalAccount } from "@web3modal/ethers/react";
+
 
 
 const AllProducts = () => {
@@ -33,7 +40,28 @@ const AllProducts = () => {
       quantity: '0.8 units',
     },
   ]
+//   const fetchProduct = async () => {
+//     try { 
+//       const products = await CallApi(
+//         "getCreatorProducts",
+//         import.meta.env.VITE_CONTRACT_ADDRESS,
+//         12237,
+//         [address]
+//       );
+//       setProductItem(products.flat());
+//     } catch (err) {
+//       setError(err);
+//     }
+//   };
 
+//   fetchProduct();
+// }, []);
+
+// if (error)
+//   return toast.error(`Error: ${error.message}`, {
+//     position: "top-center",
+//   });
+// if (!productItem) return <HashLoader color="#54BE73" size={30} />;
 
 
   return (

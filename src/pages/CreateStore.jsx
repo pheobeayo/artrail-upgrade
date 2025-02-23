@@ -1,10 +1,60 @@
 import { useState } from "react";
 import otherBackground from "../assets/otherBackground.svg";
+// import { toast } from "react-toastify";
+// import { getProvider } from "../constants/providers";
+// import { getArtrailContract } from "../constants/contract";
+// import {
+//   useWeb3ModalAccount,
+//   useWeb3ModalProvider,
+// } from "@web3modal/ethers/react";
+// import { isSupportedChain } from "../connection";
+// import { ErrorDecoder } from "ethers-decode-error";
+// import abi from "../constants/abi.json";
 
 const CreateStore = () => {
   const [storeName, setStoreName] = useState("");
   const [storeLocation, setStoreLocation] = useState("");
   const [storeWallet, setStoreWallet] = useState("");
+  // const { chainId } = useWeb3ModalAccount();
+  // const { walletProvider } = useWeb3ModalProvider();
+  // const errorDecoder = ErrorDecoder.create([abi]);
+
+  // async function handleCreateStore() {
+  //   if (!isSupportedChain(chainId)) return console.error("Wrong network");
+  //   const readWriteProvider = getProvider(walletProvider);
+  //   const signer = await readWriteProvider.getSigner();
+
+  //   const contract = getArtrailContract(signer);
+
+  //   try {
+  //     const transaction = await contract.addStore(
+  //       storeWallet,
+  //       storeName,
+  //       storeLocation
+  //     );
+  //     const receipt = await transaction.wait();
+
+  //     if (receipt.status) {
+  //       return toast.success("Store creation successful!", {
+  //         position: "top-center",
+  //       });
+  //     }
+
+  //     toast.error("Store creation failed!", {
+  //       position: "top-center",
+  //     });
+  //   } catch (err) {
+  //     const decodedError = await errorDecoder.decode(err);
+  //     toast.error(`Store creation failed! - ${decodedError.reason}`, {
+  //       position: "top-center",
+  //     });
+  //   } finally {
+  //     setStoreLocation("");
+  //     setStoreName('')
+  //     setStoreWallet('')
+  //   }
+  // }
+
 
   return (
     <main className="bg-[#231D16] w-screen">

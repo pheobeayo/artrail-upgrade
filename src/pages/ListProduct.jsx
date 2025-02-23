@@ -1,7 +1,110 @@
+// import React, { useState } from "react";
 import Ellipse from "../assets/Ellipse.svg";
 import otherBackground from "../assets/otherBackground.svg";
+// import { toast } from "react-toastify";
+// import { getProvider } from "../constants/providers";
+// import { getArtrailContract } from "../constants/contract";
+// import {
+//   useWeb3ModalAccount,
+//   useWeb3ModalProvider,
+// } from "@web3modal/ethers/react";
+// import { isSupportedChain } from "../connection";
+// import { ethers, parseEther } from "ethers";
+// import { ErrorDecoder } from 'ethers-decode-error'
+// import abi from '../constants/abi.json'
+
 
 const ListProduct = () => {
+  // const [ipfsUrl, setIpfsUrl] = useState(null);
+  // const [productName, setProductName] = useState("");
+  // const [productDesc, setProductDesc] = useState("");
+  // const [location, setLocation] = useState("");
+  // const [quantity, setQuantity] = useState("");
+  // const [price, setPrice] = useState("");
+  // const [error, setError] = useState("");
+  // const [isUploading, setIsUploading] = useState(false);
+
+  // const { chainId } = useWeb3ModalAccount();
+  // const { walletProvider } = useWeb3ModalProvider();
+  // const errorDecoder = ErrorDecoder.create([abi])
+  // const handleFileUpload = async (event) => {
+  //   const file = event.target.files[0];
+  //   if (!file) {
+  //     alert("Please select a file first");
+  //     return;
+  //   }
+
+  //   try {
+  //     const formData = new FormData();
+  //     formData.append("file", file);
+
+  //     const res = await fetch(
+  //       "https://api.pinata.cloud/pinning/pinFileToIPFS",
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           Authorization: `Bearer ${import.meta.env.VITE_PINATA_JWT}`,
+  //         },
+  //         body: formData,
+  //       }
+  //     );
+  //     const resData = await res.json();
+  //     setIpfsUrl(`https://ipfs.io/ipfs/${resData.IpfsHash}`);
+
+  //     toast.success("Upload Successful", {
+  //       position: "top-center",
+  //     });
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
+  // async function handleListProduct() {
+  //   if (!isSupportedChain(chainId)) return console.error("Wrong network");
+  //   const readWriteProvider = getProvider(walletProvider);
+  //   const signer = await readWriteProvider.getSigner();
+
+  //   const contract = getArtrailContract(signer);
+
+  //   try {
+  //     const _amount = ethers.parseUnits(price);
+
+  //     const transaction = await contract.listProduct(
+  //       productName,
+  //       _amount,
+  //       quantity,
+  //       ipfsUrl,
+  //       productDesc,
+  //       location
+  //     );
+  //     console.log("transaction: ", transaction);
+  //     const receipt = await transaction.wait();
+
+  //     if (receipt.status) {
+  //       return toast.success("Listing successful!", {
+  //         position: "top-center",
+  //       });
+  //     }
+
+  //     toast.error("Listing failed", {
+  //       position: "top-center",
+  //     });
+  //   } catch (err) {
+  //     const decodedError = await errorDecoder.decode(err)
+  //     console.error(err);
+  //     toast.error(`Listing failed! - ${decodedError.reason}`, {
+  //       position: "top-center",
+  //     });
+  //   } finally {
+  //     setIpfsUrl("");
+  //     setLocation("");
+  //     setPrice(0);
+  //     setProductDesc("");
+  //     setQuantity(0);
+  //     setProductName("");
+  //   }
+  // }
+
   return (
     <main className="bg-[#231D16] w-screen">
       <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white from-15% to-[#FFB054] to-90% lg:text-[24px] md:text-[24px] text-[20px] font-serif font-bold text-center">

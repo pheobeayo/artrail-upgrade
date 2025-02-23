@@ -1,11 +1,58 @@
+// import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import otherBackground from "../assets/otherBackground.svg";
 import Ellipse from "../assets/Ellipse.svg";
 import { FaPlus } from "react-icons/fa6";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
+// import { useWeb3ModalAccount } from "@web3modal/ethers/react";
+// import { toast } from "react-toastify";
+// import { formatUnits } from "ethers";
+// import { HashLoader  } from "react-spinners";
 
 const Store = () => {
+  // const [data, setData] = useState(null);
+  // const [error, setError] = useState(null);
+  // const { address } = useWeb3ModalAccount();
+  // const [productItem, setProductItem] = useState(null);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       // console.log("Calling API with params:", {
+  //       //   contractAddress: import.meta.env.VITE_CONTRACT_ADDRESS,
+  //       //   method: "getProductDetails",
+  //       //   contractSpecsId: 12237,
+  //       //   params: address,
+  //       // });
+  //       const result = await CallApi(
+  //         "getCreatorStores",
+  //         import.meta.env.VITE_CONTRACT_ADDRESS,
+  //         12237,
+  //         [address]
+  //       );
+  //       const products = await CallApi(
+  //         "getCreatorProducts",
+  //         import.meta.env.VITE_CONTRACT_ADDRESS,
+  //         12237,
+  //         [address]
+  //       );
+  //       setData(result.flat());
+  //       setProductItem(products.flat());
+  //     } catch (err) {
+  //       setError(err);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
+
+  // if (error)
+  //   return toast.error(`Error: ${error.message}`, {
+  //     position: "top-center",
+  //   });
+  // if (!data) return <HashLoader color="#54BE73" size={30} />;
+
  
  
        
