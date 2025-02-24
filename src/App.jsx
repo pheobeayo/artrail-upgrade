@@ -1,7 +1,7 @@
-
+import { configWeb3Modal } from "./connection"
 import AllRoutes from "./config/AllRoutes"
 
-
+configWeb3Modal();
 
 function App() {
 
