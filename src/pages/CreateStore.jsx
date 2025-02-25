@@ -61,7 +61,7 @@ const CreateStore = () => {
         Create Store
       </h1>
       <div
-        className="bg-[#231D16] lg:w-[80%] md:w-[80%] w-[80%] mx-auto text-center p-8 lg:px-0 md:px-0 border border-white rounded-2xl bg-cover mt-4"
+        className="bg-[#231D16] w-[90%] sm:w-[80%] mx-auto text-center p-6 sm:p-8 border border-white rounded-2xl bg-cover mt-4"
         style={{
           backgroundImage: `url(${otherBackground})`,
           backgroundSize: "100%",
@@ -80,7 +80,7 @@ const CreateStore = () => {
         </p>
       </div>
       <section>
-        <div className="w-[50%] lg:mx-96 md:mx-96 mx-10 lg:px-10 md:px-10">
+        <div className="w-full max-w-lg mx-auto grid-cols-1 place-items-center">
           <label className="block mt-4 mb-2 text-base font-bold text-white dark:text-white text-left">
             Store Name
           </label>
@@ -111,7 +111,7 @@ const CreateStore = () => {
             placeholder="Enter your store wallet address"
             className="bg-white border border-white text-black text-sm font-bold rounded-lg focus:ring-[#54BE73] focus:border-white block w-3/4 p-2.5 backdrop-blur-lg mb-4 outline-none"
           />
-          <button onClick={handleCreateStore} className="bg-[#54BE73] text-white py-2 px-4  lg:text-[20px] md:text-[20px] font-bold text-[16px] w-3/4 my-4 rounded-3xl">
+          <button onClick={handleCreateStore} className="bg-[#54BE73] text-white py-2 px-4  lg:text-[20px] md:text-[20px] font-bold text-[16px] w-full my-4 rounded-3xl">
             Submit
           </button>
         </div>

@@ -116,8 +116,8 @@ Pitch: https://www.canva.com/design/DAGU9-Tx2tM/lE1gdamoECv028SJGONvHQ/edit?utm_
 
 ```
 
-`Deployed and verified on `
-`Artrail deployed to:`
+`Deployed and verified on Crossfi`
+`Artrail deployed to: 0x3D98a2f7dFdAB3c09A28e95f5e49f26be87f7f95`
 `Creator account created for: `
 `Store added: `
 

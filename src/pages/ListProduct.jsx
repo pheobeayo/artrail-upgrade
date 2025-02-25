@@ -12,6 +12,7 @@ import { isSupportedChain } from "../connection";
 import { ethers, parseEther } from "ethers";
 import { ErrorDecoder } from 'ethers-decode-error'
 import abi from '../constants/abi.json'
+import { HashLoader  } from "react-spinners";
 
 const ListProduct = () => {
   const [ipfsUrl, setIpfsUrl] = useState(null);
@@ -27,88 +28,7 @@ const ListProduct = () => {
   const { walletProvider } = useWeb3ModalProvider();
   const errorDecoder = ErrorDecoder.create([abi])
 
-  //   const APIKEY = import.meta.env.VITE_VOTTUN_APIKEY;
-  //   const APPID = import.meta.env.VITE_VOTTUN_APPID;
 
-  //   const handleFileChange = async (event) => {
-  //     const file = event.target.files[0];
-  //     if (!file) {
-  //       alert("Please select a file first!");
-  //       return;
-  //     }
-
-  //     const formData = new FormData();
-  //     formData.append("filename", file.name);
-  //     formData.append("file", file);
-
-  //     try {
-  //       const response = await fetch(
-  //         "https://ipfsapi-v2.vottun.tech/ipfs/v2/file/upload",
-  //         {
-  //           method: "POST",
-  //           headers: {
-  //             Authorization: `Bearer ${APIKEY.trim()}`,
-  //             "x-application-vkn": `${APPID.trim()}`,
-  //             //   'Content-Type': 'multipart/formdata'
-  //           },
-  //           body: formData,
-  //         }
-  //       );
-
-  //       const data = await response.json();
-  //       console.log(data);
-
-  //       if (data && data.cid) {
-  //         setIpfsUrl(`https://ipfs.io/ipfs/${data.cid}`);
-  //         alert("File uploaded successfully!");
-  //       } else {
-  //         alert("File upload failed!");
-  //       }
-  //     } catch (error) {
-  //       console.error("Error uploading file:", error);
-  //       alert("An error occurred during the upload process.");
-  //     }
-  //   };
-
-  //   const handleFileChange = async (event) => {
-  //     const file = event.target.files[0];
-  //     if (!file) {
-  //       alert("Please select a file first!");
-  //       return;
-  //     }
-
-  //     const formData = new FormData();
-  //     formData.append("filename", file.name);
-  //     formData.append("file", file);
-
-  //     try {
-  //       const response = await fetch("https://ipfsapi-v2.vottun.tech/ipfs/v2/file/upload", {
-  //         method: "POST",
-  //         headers: {
-  //           Authorization: `Bearer ${APIKEY.trim()}`,
-  //           "x-application-vkn": `${APPID.trim()}`,
-  //           // Remove Content-Type to let the browser set it automatically for FormData
-  //         },
-  //         body: formData,
-  //       });
-
-  //       if (response.ok) {
-  //         const data = await response.json();
-  //         if (data && data.cid) {
-  //           setIpfsUrl(`https://ipfs.io/ipfs/${data.cid}`);
-  //           alert("File uploaded successfully!");
-  //         } else {
-  //           alert("File upload failed! Check API response.");
-  //         }
-  //       } else {
-  //         console.error("Error:", response.status, response.statusText);
-  //         alert("Failed to upload file: Server responded with status " + response.status);
-  //       }
-  //     } catch (error) {
-  //       console.error("Error uploading file:", error);
-  //       alert("An error occurred during the upload process.");
-  //     }
-  //   };
 
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
@@ -248,7 +168,7 @@ const ListProduct = () => {
               {isUploading && (
                 <div className="absolute inset-0 flex items-center justify-center bg-gray-200 bg-opacity-50 rounded-lg">
                   <div className="loader"></div>{" "}
-                  {/* Add your loading spinner here */}
+                  <HashLoader color="#54BE73" size={30} />
                 </div>
               )}
             </div>

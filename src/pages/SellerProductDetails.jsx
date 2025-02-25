@@ -1,36 +1,9 @@
-// import React, { useState, useEffect } from "react";
+
 import { Link} from "react-router-dom";
-// import { toast } from "react-toastify";
-// import { formatUnits, parseUnits } from "ethers";
-// import { HashLoader  } from "react-spinners";
-// import { useParams} from "react-router-dom";
+
 
 const SellerProductDetails = () => {
-  // const { id } = useParams();
-  // const [data, setData] = useState(null);
-  // const [error, setError] = useState(null);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const result = await CallApi(
-  //         "getProductDetails",
-  //         import.meta.env.VITE_CONTRACT_ADDRESS,
-  //         12237,
-  //         [Number(id)]
-  //       );
-  //       setData(result.flat());
-  //     } catch (err) {
-  //       setError(err);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, []);
-
-  // if (error) return toast.error(`Error: ${error.message}`);
-  // if (!data) return <HashLoader color="#54BE73" size={30} />;
-
+  
   
   return (
     <main className="bg-[#231D16] w-screen">

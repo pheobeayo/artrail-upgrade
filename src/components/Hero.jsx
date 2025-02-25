@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="bg-[#231D16] w-full">
-      <section className="flex flex-col lg:flex-row md:flex-row 2xl:flex-row xl:flex-row items-center px-4 md:px-12 lg:px-20">
+      <section className="flex flex-col lg:flex-row md:flex-row 2xl:flex-row xl:flex-row items-center px-4 md:px-12 lg:px-12">
         <div className="2xl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[70%] w-[100%] p-16">
-          <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#FFB054] font-serif text-[30px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[50px] font-bold">
+          <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#FFB054] font-serif text-[30px] 2xl:text-[45px] xl:text-[45px] lg:text-[45px] md:text-[45px] font-bold">
             Tokenizing Real-World <br /> Assets for Global Access <br /> and Trust
           </h1>
-          <p className="text-white text-base md:text-lg lg:text-xl mt-4 font-sans">
+          <p className="text-white text-base md:text-lg lg:text-xl mt-4 font-sans text-justify">
             Mint, Trade, and Track Authentic Art, Artifacts, and Crafts <br />
             with NFTs on a Secure, Transparent Blockchain Marketplace
           </p>
@@ -19,13 +19,13 @@ const Hero = () => {
             <Link to='/list-product'> <button className="bg-[#54BE73]  rounded-full text-[20px] lg:text-[25px] md:text-[25px] 2xl:text-[20px] xl:text-[20px] p-4 text-white">
               List Product
             </button></Link>
-            <div className="flex justify-between border border-white rounded-full px-2 py-1 space-x-2 max-w-lg">
+            <div className="flex justify-between border border-white rounded-full px-2 py-1 space-x-2 max-w-lg ">
               <input
                 type="text"
                 placeholder="Input Product tracking code"
-                className="bg-transparent text-white p-4 w-full outline-none placeholder:text-white text-[13px] text-serif"
+                className="bg-transparent text-white flex-grow min-w-0 outline-none placeholder:text-white text-[9px] md:text-[12px] lg:text-[12px] xl:text-[12px] 2xl:text-[12px] px-2 placeholder:whitespace-nowrap placeholder:truncate "
               />
-              <button className="bg-[#33302E] w-[45%] font-Montserrat text-[20px] py-1 rounded-3xl border-white border p-4 text-white">
+              <button className="bg-[#33302E] w-[28%] font-Montserrat text-[15px] md:text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] py-1 rounded-3xl border-white border p-4 text-white">
                 Track
               </button>
             </div>
@@ -36,15 +36,15 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-[#26201A] to-[#131313] py-12 px-6 md:px-12">
+      <section className="bg-gradient-to-r from-[#26201A] to-[#131313] py-12 px-6 md:px-12 lg:px-12 xl:px-12 2xl:px-12">
         <div className="text-center">
-          <h2 className="text-white text-xl md:text-3xl font-bold">Features of Artrail</h2>
-          <h2 className="text-white text-lg md:text-2xl font-medium">Features and Functionality of Artrail</h2>
+          <h2 className="text-white text-xl md:text-3xl lg:text-3xl 2xl:text-3xl xl:text-3xl font-bold">Features of Artrail</h2>
+          <h2 className="text-white text-lg md:text-2xl lg:text-2xl 2xl:text-2xl xl:text-2xl font-medium">Features and Functionality of Artrail</h2>
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between py-6 gap-6">
-          <img src={featureImage} alt="Feature" className="w-full md:w-1/2 max-w-lg" />
-          <div className="w-full md:w-1/2 space-y-6">
+          <img src={featureImage} alt="Feature" className="w-full md:w-1/2 h-[600px]lg:w-[50%] 2xl:w-[50%] xl:w-[50%] max-w-lg" />
+          <div className=" lg:w-[50%] md:w-[50%] xl:w-[50%] 2xl:w-[50%] w-[90%] h-[700px] space-y-8">
             {["NFT Minting for RWA", "NFT Transfer & Ownership", "Marketplace Search & Discovery", "Tracking & Claiming RWAs"].map((title, index) => (
               <div key={index} className='bg-[#26201A] border rounded-2xl p-4 flex items-center gap-4'>
                 <img src={featureIcon} alt='Feature Icon' className='w-10 h-10' />
