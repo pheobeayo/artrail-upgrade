@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="bg-[#231D16] w-full">
+    <div className="bg-[#231D16] relative">
       <section className="flex flex-col lg:flex-row md:flex-row 2xl:flex-row xl:flex-row items-center px-4 md:px-12 lg:px-12">
         <div className="2xl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[70%] w-[100%] p-16">
           <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#FFB054] font-serif text-[30px] 2xl:text-[45px] xl:text-[45px] lg:text-[45px] md:text-[45px] font-bold">

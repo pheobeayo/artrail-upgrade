@@ -11,7 +11,7 @@ const Transactions = () => {
 
 
     return (
-        <main className="bg-[#231D16] w-screen">
+        <main className="bg-[#231D16] relative">
 
             <div className="bg-[#231D16] lg:w-[80%] md:w-[80%] w-[80%] mx-auto text-center p-8 lg:px-0 md:px-0 border border-white rounded-2xl bg-cover "
                 style={{
